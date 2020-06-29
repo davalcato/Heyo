@@ -252,13 +252,11 @@ struct Home : View {
                                 .foregroundColor(.primary)
                         }
                         
-//                        ForEach(2...8,id: .self){i in
-                        
-                        ForEach(2 ... 8, id: \.self) { // identified by self
+                        ForEach(2...8,id: \.self){i in
                             
                             ZStack{
                                 
-                                Image("p(i)")
+                                Image("p\(i)")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: 60, height: 60)
@@ -268,7 +266,7 @@ struct Home : View {
                                 
                                 Circle()
                                     .stroke(AngularGradient(gradient: .init(colors: self.colors), center: .center), lineWidth: 3)
-                                    .frame(width: CGFloat(68), height: CGFloat(68), alignment: .center)
+                                    .frame(width: 68, height: 68)
                             }
                         }
                     }
