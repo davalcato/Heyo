@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33B822C363E831EC02DF6E9B /* Pods_Heyo_HeyoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B7FACC3D21713B6570B1090 /* Pods_Heyo_HeyoUITests.framework */; };
 		750C37BC24A983CC00F77592 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750C37BB24A983CC00F77592 /* AppDelegate.swift */; };
 		750C37BE24A983CC00F77592 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750C37BD24A983CC00F77592 /* SceneDelegate.swift */; };
 		750C37C024A983CC00F77592 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750C37BF24A983CC00F77592 /* ContentView.swift */; };
@@ -15,6 +16,8 @@
 		750C37C824A983D000F77592 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750C37C624A983D000F77592 /* LaunchScreen.storyboard */; };
 		750C37D324A983D000F77592 /* HeyoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750C37D224A983D000F77592 /* HeyoTests.swift */; };
 		750C37DE24A983D000F77592 /* HeyoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750C37DD24A983D000F77592 /* HeyoUITests.swift */; };
+		E3469C81767D8C48782EC88E /* Pods_Heyo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9587C87DB91EAFCEA0DA329B /* Pods_Heyo.framework */; };
+		E5AB40B6DC7006371A611DAB /* Pods_HeyoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13807F148B1D04D3B3C0FF09 /* Pods_HeyoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13807F148B1D04D3B3C0FF09 /* Pods_HeyoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeyoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A85EB4A51A5C590598590C5 /* Pods-HeyoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeyoTests.debug.xcconfig"; path = "Target Support Files/Pods-HeyoTests/Pods-HeyoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F0C8C65CB37CFBF8F35A06A /* Pods-Heyo-HeyoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heyo-HeyoUITests.release.xcconfig"; path = "Target Support Files/Pods-Heyo-HeyoUITests/Pods-Heyo-HeyoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		750C37B824A983CC00F77592 /* Heyo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heyo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		750C37BB24A983CC00F77592 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		750C37BD24A983CC00F77592 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		750C37D924A983D000F77592 /* HeyoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeyoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		750C37DD24A983D000F77592 /* HeyoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeyoUITests.swift; sourceTree = "<group>"; };
 		750C37DF24A983D000F77592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B7FACC3D21713B6570B1090 /* Pods_Heyo_HeyoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Heyo_HeyoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9587C87DB91EAFCEA0DA329B /* Pods_Heyo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Heyo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAEB099FFE4EA8A89C55039F /* Pods-HeyoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeyoTests.release.xcconfig"; path = "Target Support Files/Pods-HeyoTests/Pods-HeyoTests.release.xcconfig"; sourceTree = "<group>"; };
+		C17FC68106530A61C7BA1035 /* Pods-Heyo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heyo.release.xcconfig"; path = "Target Support Files/Pods-Heyo/Pods-Heyo.release.xcconfig"; sourceTree = "<group>"; };
+		D07D1A893C7D2CC255E7C233 /* Pods-Heyo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heyo.debug.xcconfig"; path = "Target Support Files/Pods-Heyo/Pods-Heyo.debug.xcconfig"; sourceTree = "<group>"; };
+		F3E2B6B3D7E1C538AA0DD49E /* Pods-Heyo-HeyoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heyo-HeyoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Heyo-HeyoUITests/Pods-Heyo-HeyoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3469C81767D8C48782EC88E /* Pods_Heyo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AB40B6DC7006371A611DAB /* Pods_HeyoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33B822C363E831EC02DF6E9B /* Pods_Heyo_HeyoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				750C37D124A983D000F77592 /* HeyoTests */,
 				750C37DC24A983D000F77592 /* HeyoUITests */,
 				750C37B924A983CC00F77592 /* Products */,
+				A4179E04AAA0AD43CF1D6B13 /* Pods */,
+				7E855CDC7D128DE2D6AE66FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +153,30 @@
 			path = HeyoUITests;
 			sourceTree = "<group>";
 		};
+		7E855CDC7D128DE2D6AE66FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9587C87DB91EAFCEA0DA329B /* Pods_Heyo.framework */,
+				7B7FACC3D21713B6570B1090 /* Pods_Heyo_HeyoUITests.framework */,
+				13807F148B1D04D3B3C0FF09 /* Pods_HeyoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4179E04AAA0AD43CF1D6B13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D07D1A893C7D2CC255E7C233 /* Pods-Heyo.debug.xcconfig */,
+				C17FC68106530A61C7BA1035 /* Pods-Heyo.release.xcconfig */,
+				F3E2B6B3D7E1C538AA0DD49E /* Pods-Heyo-HeyoUITests.debug.xcconfig */,
+				2F0C8C65CB37CFBF8F35A06A /* Pods-Heyo-HeyoUITests.release.xcconfig */,
+				1A85EB4A51A5C590598590C5 /* Pods-HeyoTests.debug.xcconfig */,
+				BAEB099FFE4EA8A89C55039F /* Pods-HeyoTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 750C37E224A983D000F77592 /* Build configuration list for PBXNativeTarget "Heyo" */;
 			buildPhases = (
+				F4A87A1216BE33CB48878A27 /* [CP] Check Pods Manifest.lock */,
 				750C37B424A983CC00F77592 /* Sources */,
 				750C37B524A983CC00F77592 /* Frameworks */,
 				750C37B624A983CC00F77592 /* Resources */,
+				BF98DF4F801905124C064370 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 750C37E524A983D000F77592 /* Build configuration list for PBXNativeTarget "HeyoTests" */;
 			buildPhases = (
+				F422DCC9C5B681C9D67C3163 /* [CP] Check Pods Manifest.lock */,
 				750C37CA24A983D000F77592 /* Sources */,
 				750C37CB24A983D000F77592 /* Frameworks */,
 				750C37CC24A983D000F77592 /* Resources */,
@@ -178,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 750C37E824A983D000F77592 /* Build configuration list for PBXNativeTarget "HeyoUITests" */;
 			buildPhases = (
+				5C743D75047E785BF14A15BA /* [CP] Check Pods Manifest.lock */,
 				750C37D524A983D000F77592 /* Sources */,
 				750C37D624A983D000F77592 /* Frameworks */,
 				750C37D724A983D000F77592 /* Resources */,
+				29144323ECE7F8616C32BA6C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +307,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29144323ECE7F8616C32BA6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Heyo-HeyoUITests/Pods-Heyo-HeyoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Heyo-HeyoUITests/Pods-Heyo-HeyoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Heyo-HeyoUITests/Pods-Heyo-HeyoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C743D75047E785BF14A15BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Heyo-HeyoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF98DF4F801905124C064370 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Heyo/Pods-Heyo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Heyo/Pods-Heyo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Heyo/Pods-Heyo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F422DCC9C5B681C9D67C3163 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeyoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4A87A1216BE33CB48878A27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Heyo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		750C37B424A983CC00F77592 /* Sources */ = {
@@ -432,6 +581,7 @@
 		};
 		750C37E324A983D000F77592 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D07D1A893C7D2CC255E7C233 /* Pods-Heyo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +602,7 @@
 		};
 		750C37E424A983D000F77592 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C17FC68106530A61C7BA1035 /* Pods-Heyo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +623,7 @@
 		};
 		750C37E624A983D000F77592 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A85EB4A51A5C590598590C5 /* Pods-HeyoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +646,7 @@
 		};
 		750C37E724A983D000F77592 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAEB099FFE4EA8A89C55039F /* Pods-HeyoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +669,7 @@
 		};
 		750C37E924A983D000F77592 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3E2B6B3D7E1C538AA0DD49E /* Pods-Heyo-HeyoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +690,7 @@
 		};
 		750C37EA24A983D000F77592 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F0C8C65CB37CFBF8F35A06A /* Pods-Heyo-HeyoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
