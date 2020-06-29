@@ -287,7 +287,7 @@ struct Home : View {
             
             // since tab view is used inside Zstack...
         }
-        .navigationBarTitle("Instagram",displayMode: .inline)
+        .navigationBarTitle("Heyo",displayMode: .inline)
         .navigationBarItems(leading:
             
             Button(action: {
