@@ -238,9 +238,15 @@ struct Home : View {
                     
                     HStack(spacing: 15){
                         
+                        Button(action: {
+                            
+                            
+                        }) {
+                      
                         ZStack(alignment: .bottomTrailing){
                             
                             Image("p1")
+                            .renderingMode(.original)
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 60, height: 60)
@@ -267,9 +273,11 @@ struct Home : View {
                                 Circle()
                                     .stroke(AngularGradient(gradient: .init(colors: self.colors), center: .center), lineWidth: 3)
                                     .frame(width: 68, height: 68)
+                                }
                             }
                         }
                     }
+                        
                     .padding()
                 }
                 .background(self.scheme == .dark ? Color.black : Color.white)
@@ -300,6 +308,7 @@ struct Home : View {
             , trailing:
         
             NavigationLink(destination: Text("Send Message"), label: {
+                
                 
                 Image("send")
                     .foregroundColor(.gray)
