@@ -220,7 +220,7 @@ struct CShape : Shape {
             
             // This is where the center curves in the middle of the screen..
             
-            path.addArc(center: CGPoint(x: rect.width / 2, y: 0), radius: 30, startAngle: .zero, endAngle: .init(degrees: 180), clockwise: false)
+            path.addArc(center: CGPoint(x: rect.width / 2, y: 0), radius: 35, startAngle: .zero, endAngle: .init(degrees: 180), clockwise: false)
         }
     }
 }
@@ -389,6 +389,8 @@ struct PostView : View {
                         
                 }
                 
+                
+                Spacer(minLength: 0)
                 Button(action: {
                     
                 }) {
