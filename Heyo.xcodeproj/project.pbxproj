@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -173,7 +173,6 @@
 				7861397BF1244DC16FF1D5EB /* Pods-HeyoTests.debug.xcconfig */,
 				01BCC9CDAC9010168BE53541 /* Pods-HeyoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

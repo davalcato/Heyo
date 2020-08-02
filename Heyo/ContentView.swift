@@ -126,10 +126,12 @@ struct TabView : View {
                 // because bottom edge is ignored...
                 .padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.bottom)
                 .background(self.scheme == .dark ? Color.black : Color.white)
+                
+                // Here is arch CShape in the middle taking effect...
                 .clipShape(CShape())
                 .shadow(color: Color.primary.opacity(0.08), radius: 5, x: 0, y: -5)
                 
-                // Button
+                // This is where the red button in the middle of screen is....
                 
                 Button(action: {
                     
@@ -138,6 +140,7 @@ struct TabView : View {
                     Image(systemName: "plus")
                         .foregroundColor(.white)
                         .font(.system(size: 24))
+                        // Padding causing the red button to fill in size...
                         .padding()
                         .background(LinearGradient(gradient: .init(colors: self.colors), startPoint: .topLeading, endPoint: .bottomTrailing))
                         .clipShape(Circle())
@@ -215,9 +218,9 @@ struct CShape : Shape {
             path.addLine(to: CGPoint(x: rect.width, y: rect.height))
             path.addLine(to: CGPoint(x: rect.width, y: 0))
             
-            // center curve..
+            // This is where the center curves in the middle of the screen..
             
-            path.addArc(center: CGPoint(x: rect.width / 2, y: 0), radius: 35, startAngle: .zero, endAngle: .init(degrees: 180), clockwise: false)
+            path.addArc(center: CGPoint(x: rect.width / 2, y: 0), radius: 30, startAngle: .zero, endAngle: .init(degrees: 180), clockwise: false)
         }
     }
 }
@@ -359,7 +362,7 @@ struct PostView : View {
             Image(self.postData.postImage)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(width: UIScreen.main.bounds.width - 30, height: 280)
+                .frame(width: UIScreen.main.bounds.width - 5, height: 384)
                 .cornerRadius(10)
                 .padding(.vertical, 10)
             
@@ -378,6 +381,18 @@ struct PostView : View {
                     
                 }) {
                     
+                    Image("comment")
+                        .resizable()
+                        .renderingMode(.original)
+                        .frame(width: 32, height: 32)
+                        .foregroundColor(.white)
+                        
+                }
+                
+                Button(action: {
+                    
+                }) {
+                    
                     Image("send")
                         .foregroundColor(.gray)
                 }
@@ -385,9 +400,9 @@ struct PostView : View {
                 Spacer(minLength: 0)
                 
                 Button(action: {
-                    
+
                 }) {
-                    
+
                     Image("save")
                     .resizable()
                     .frame(width: 18, height: 22)
