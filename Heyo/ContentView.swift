@@ -444,17 +444,25 @@ struct Post : Identifiable {
     var time : String
     var likes : String
     var liked : Bool
+    
+    
+    var loading : Bool
+    var seen : Bool
+//    var url : String
+    var proPic : String
+    
+    
 }
 
 var data = [
 
-    Post(id: 0, user: "Capcom", profile: "p1", postImage: "post1", postTitle: "New Resident Evil Village...", time: "24 min ago", likes: "1525", liked: true),
+    Post(id: 0, user: "Capcom", profile: "p1", postImage: "post1", postTitle: "New Resident Evil Village...", time: "24 min ago", likes: "1525", liked: true, loading: false, seen: false, proPic: "post1"),
     
-    Post(id: 1, user: "iJustine", profile: "profile", postImage: "post2", postTitle: "iPhone 11.....", time: "58 min ago", likes: "2562", liked: true),
+    Post(id: 1, user: "iJustine", profile: "profile", postImage: "post2", postTitle: "iPhone 11.....", time: "58 min ago", likes: "2562", liked: true, loading: false, seen: false, proPic: "post2"),
     
-    Post(id: 2, user: "Apple", profile: "p2", postImage: "post3", postTitle: "WWDC 2020 @ June 22", time: "1 hr ago", likes: "24568", liked: false),
+    Post(id: 2, user: "Apple", profile: "p2", postImage: "post3", postTitle: "WWDC 2020 @ June 22", time: "1 hr ago", likes: "24568", liked: false, loading: false, seen: false, proPic: "post3"),
     
-    Post(id: 3, user: "Catherine", profile: "p4", postImage: "post4", postTitle: "Nice Day :)", time: "28 min ago", likes: "1925", liked: false),
+    Post(id: 3, user: "Catherine", profile: "p4", postImage: "post4", postTitle: "Nice Day :)", time: "28 min ago", likes: "1925", liked: false, loading: false, seen: false, proPic: "post4"),
     
-    Post(id: 4, user: "UnBoxing", profile: "p5", postImage: "post5", postTitle: "New MacBook Pro Unbox...", time: "2 min ago", likes: "85669", liked: false),
+    Post(id: 4, user: "UnBoxing", profile: "p5", postImage: "post5", postTitle: "New MacBook Pro Unbox...", time: "2 min ago", likes: "85669", liked: false, loading: false, seen: false, proPic: "post5"),
 ]
