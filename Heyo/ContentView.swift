@@ -224,6 +224,7 @@ struct CShape : Shape {
 
 struct Home : View {
     
+    
     var colors = [Color("Color"),Color("Color1")]
     // to identify dark mode...
     @Environment(\.colorScheme) var scheme
@@ -238,6 +239,15 @@ struct Home : View {
                     
                     HStack(spacing: 15){
                         
+//<<<<<<< Updated upstream
+//=======
+//                        Button(action: {
+//                            
+//                           
+//                            
+//                        }) {
+//                      
+//>>>>>>> Stashed changes
                         ZStack(alignment: .bottomTrailing){
                             
                             Image("p1")
@@ -265,6 +275,9 @@ struct Home : View {
                                 // Ring...
                                 
                                 Circle()
+                                    
+                                    .trim(from: 0, to: 1)
+                                   
                                     .stroke(AngularGradient(gradient: .init(colors: self.colors), center: .center), lineWidth: 3)
                                     .frame(width: 68, height: 68)
                             }
@@ -435,17 +448,22 @@ struct Post : Identifiable {
     var time : String
     var likes : String
     var liked : Bool
+    
+    var loading : Bool
+    var seen : Bool
+    
+    
 }
 
 var data = [
 
-    Post(id: 0, user: "Capcom", profile: "p1", postImage: "post1", postTitle: "New Resident Evil Village...", time: "24 min ago", likes: "1525", liked: true),
+    Post(id: 0, user: "Capcom", profile: "p1", postImage: "post1", postTitle: "New Resident Evil Village...", time: "24 min ago", likes: "1525", liked: true, loading: false, seen: false),
     
-    Post(id: 1, user: "iJustine", profile: "profile", postImage: "post2", postTitle: "iPhone 11.....", time: "58 min ago", likes: "2562", liked: true),
+    Post(id: 1, user: "iJustine", profile: "profile", postImage: "post2", postTitle: "iPhone 11.....", time: "58 min ago", likes: "2562", liked: true, loading: false, seen: false),
     
-    Post(id: 2, user: "Apple", profile: "p2", postImage: "post3", postTitle: "WWDC 2020 @ June 22", time: "1 hr ago", likes: "24568", liked: false),
+    Post(id: 2, user: "Apple", profile: "p2", postImage: "post3", postTitle: "WWDC 2020 @ June 22", time: "1 hr ago", likes: "24568", liked: false, loading: false, seen: false),
     
-    Post(id: 3, user: "Catherine", profile: "p4", postImage: "post4", postTitle: "Nice Day :)", time: "28 min ago", likes: "1925", liked: false),
+    Post(id: 3, user: "Catherine", profile: "p4", postImage: "post4", postTitle: "Nice Day :)", time: "28 min ago", likes: "1925", liked: false, loading: false, seen: false),
     
-    Post(id: 4, user: "UnBoxing", profile: "p5", postImage: "post5", postTitle: "New MacBook Pro Unbox...", time: "2 min ago", likes: "85669", liked: false),
+    Post(id: 4, user: "UnBoxing", profile: "p5", postImage: "post5", postTitle: "New MacBook Pro Unbox...", time: "2 min ago", likes: "85669", liked: false, loading: false, seen: false)
 ]
