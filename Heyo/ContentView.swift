@@ -454,7 +454,7 @@ struct Post : Identifiable {
     
 }
 
-var data = [
+ var data = [
 
     Post(id: 0, user: "Capcom", profile: "p1", postImage: "post1", postTitle: "New Resident Evil Village...", time: "24 min ago", likes: "1525", liked: true, loading: false, seen: false, proPic: "post1"),
     
