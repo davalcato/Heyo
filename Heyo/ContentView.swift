@@ -269,6 +269,7 @@ struct Home : View {
                         })
                         
                         ForEach(2...8,id: \.self){i in
+                            NavigationLink(destination: Text("Send"), label: {
                             
                             ZStack{
                                 
@@ -284,8 +285,8 @@ struct Home : View {
                                     .stroke(AngularGradient(gradient: .init(colors: self.colors), center: .center), lineWidth: 3)
                                     .frame(width: 68, height: 68)
                                 }
-                            }
-//                        }
+                            })
+                        }
                         
                     }
                         
