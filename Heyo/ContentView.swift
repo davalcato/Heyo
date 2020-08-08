@@ -21,6 +21,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        .previewDevice(PreviewDevice(rawValue: "iPhone 11"))
     }
 }
 
@@ -72,8 +73,9 @@ struct TabView : View {
                     }) {
                         
                         Image("home")
-                            .foregroundColor(self.index == 0 ? Color.primary : Color.primary.opacity(0.25))
+                            .foregroundColor(self.index == 0 ? Color.primary : Color.primary.opacity(0.40))
                             .padding(.horizontal)
+                        
                     }
                     .padding(.trailing, 30)
                     
@@ -84,7 +86,7 @@ struct TabView : View {
                     }) {
                         
                         Image("search")
-                            .foregroundColor(self.index == 1 ? Color.primary : Color.primary.opacity(0.25))
+                            .foregroundColor(self.index == 1 ? Color.primary : Color.primary.opacity(0.40))
                             .padding(.horizontal)
                     }
 
@@ -100,7 +102,7 @@ struct TabView : View {
                         
                         Image(systemName: "suit.heart.fill")
                             .font(.system(size: 24))
-                            .foregroundColor(self.index == 2 ? Color.primary : Color.primary.opacity(0.25))
+                            .foregroundColor(self.index == 2 ? Color.primary : Color.primary.opacity(0.40))
                             .padding(.horizontal)
                     }
                     .padding(.trailing, 30)
@@ -121,6 +123,7 @@ struct TabView : View {
                     }
 
                 }
+                
                 .padding(.horizontal)
                 .padding(.top)
                 // because bottom edge is ignored...
@@ -239,13 +242,15 @@ struct Home : View {
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     
-                    HStack(spacing: 15){
+                    HStack(spacing: 22){
                         
-                        Button(action: {
-                            
-                            
-                        }) {
+//                        Button(action: {
+//
+//
+//                        }) {
                       
+                        NavigationLink(destination: Text("Send"), label: {
+                        
                         ZStack(alignment: .bottomTrailing){
                             
                             Image("p1")
@@ -259,7 +264,9 @@ struct Home : View {
                                 .font(.system(size: 18))
                                 // for dark mode adoption...
                                 .foregroundColor(.primary)
-                        }
+                            }
+                            
+                        })
                         
                         ForEach(2...8,id: \.self){i in
                             
@@ -278,7 +285,8 @@ struct Home : View {
                                     .frame(width: 68, height: 68)
                                 }
                             }
-                        }
+//                        }
+                        
                     }
                         
                     .padding()
@@ -471,13 +479,13 @@ struct Post : Identifiable {
 
  var data = [
 
-    Post(id: 0, user: "Capcom", profile: "p1", postImage: "post1", postTitle: "New Resident Evil Village...", time: "24 min ago", likes: "1525", liked: true, loading: false, seen: false, proPic: "post1"),
+    Post(id: 0, user: "Capcom", profile: "p1", postImage: "post1", postTitle: "New Resident Evil Village...", time: "24 min ago", likes: "1525", liked: true, loading: false, seen: false, proPic: "img4"),
     
-    Post(id: 1, user: "iJustine", profile: "profile", postImage: "post2", postTitle: "iPhone 11.....", time: "58 min ago", likes: "2562", liked: true, loading: false, seen: false, proPic: "post2"),
+    Post(id: 1, user: "iJustine", profile: "profile", postImage: "post2", postTitle: "iPhone 11.....", time: "58 min ago", likes: "2562", liked: true, loading: false, seen: false, proPic: "img4"),
     
-    Post(id: 2, user: "Apple", profile: "p2", postImage: "post3", postTitle: "WWDC 2020 @ June 22", time: "1 hr ago", likes: "24568", liked: false, loading: false, seen: false, proPic: "post3"),
+    Post(id: 2, user: "Apple", profile: "p2", postImage: "post3", postTitle: "WWDC 2020 @ June 22", time: "1 hr ago", likes: "24568", liked: false, loading: false, seen: false, proPic: "img4"),
     
-    Post(id: 3, user: "Catherine", profile: "p4", postImage: "post4", postTitle: "Nice Day :)", time: "28 min ago", likes: "1925", liked: false, loading: false, seen: false, proPic: "post4"),
+    Post(id: 3, user: "Catherine", profile: "p4", postImage: "post4", postTitle: "Nice Day :)", time: "28 min ago", likes: "1925", liked: false, loading: false, seen: false, proPic: "img4"),
     
-    Post(id: 4, user: "UnBoxing", profile: "p5", postImage: "post5", postTitle: "New MacBook Pro Unbox...", time: "2 min ago", likes: "85669", liked: false, loading: false, seen: false, proPic: "post5"),
+    Post(id: 4, user: "UnBoxing", profile: "p5", postImage: "post5", postTitle: "New MacBook Pro Unbox...", time: "2 min ago", likes: "85669", liked: false, loading: false, seen: false, proPic: "img4"),
 ]
