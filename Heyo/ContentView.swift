@@ -339,10 +339,13 @@ struct PostView : View {
         
         VStack(alignment: .leading){
             
+            NavigationLink(destination: Text("Profile"), label: {
+            
             HStack(spacing: 12){
                 
                 Image(self.postData.profile)
                 .resizable()
+                .renderingMode(.original)
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 30, height: 30)
                 .clipShape(Circle())
@@ -372,6 +375,7 @@ struct PostView : View {
                     .foregroundColor(.gray)
                 }
             }
+        })
             
             Image(self.postData.postImage)
                 .resizable()
