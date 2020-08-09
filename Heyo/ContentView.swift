@@ -117,7 +117,7 @@ struct TabView : View {
                         Image("profile")
                         .renderingMode(.original)
                         .resizable()
-                        .frame(width: 24, height: 24)
+                        .frame(width: 30, height: 30)
                         .clipShape(Circle())
                         .padding(.horizontal)
                     }
@@ -347,6 +347,8 @@ struct PostView : View {
                 .frame(width: 30, height: 30)
                 .clipShape(Circle())
                 
+                NavigationLink(destination: Text("Profile"), label: {
+                
                 VStack(alignment: .leading, spacing: 6) {
                     
                     Text(self.postData.user)
@@ -355,6 +357,8 @@ struct PostView : View {
                         .font(.caption)
                         .foregroundColor(.gray)
                 }
+                
+                })
                 
                 Spacer(minLength: 0)
                 
