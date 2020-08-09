@@ -275,6 +275,7 @@ struct Home : View {
                                 
                                 Image("p\(i)")
                                 .resizable()
+                                .renderingMode(.original)
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: 60, height: 60)
                                 .clipShape(Circle())
